@@ -52,7 +52,8 @@
         "random": "c",
         "functional": "c",
         "httpd.h": "c",
-        "netapi.h": "c"
+        "netapi.h": "c",
+        "netif_pcap.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"

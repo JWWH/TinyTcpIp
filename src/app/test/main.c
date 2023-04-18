@@ -15,6 +15,7 @@
 #include "netif_pcap.h"
 #include "debug.h"
 #include "nlist.h"
+#include "mblock.h"
 
 net_err_t netdev_init(void){
     netif_pcap_open();
@@ -25,6 +26,11 @@ typedef struct _tnode_t {
     int id;
     nlist_node_t node;
 } tnode_t;
+
+// C语言中函数声明对函数的检测最主要的标准是函数名，C语言中函数参数列表中的参数名可以缺省
+// C语言当中参数列表中的数据类型也可以缺省，默认是int。
+// add()并不等价于add(void);  add(void)明确指明add函数不接收任何参数，若对其传参会报错，提示是error；
+// 而add()表示接收参数，他的类型是int，只是他是一种没有意义的接收，并不会用这个参数,提示是wring；
 
 void nlist_test(void) {
     #define NODE_CNT   4
@@ -82,8 +88,27 @@ void nlist_test(void) {
 
 }
 
+void mblock_test (void) {
+    mblock_t blist;
+    static uint8_t buffer[100][10]; // C语言中二维数组的内存布局？
+
+    mblock_init(&blist, buffer, 100, 10, NLOCKER_THREAD);
+
+    void * temp[10];
+    for (int i = 0; i < 10; i++) {
+        temp[i] = mblock_alloc(&blist, 0);
+        plat_printf("block: %p, free_count: %d\n", temp[i], mblock_free_cnt(&blist));
+    }
+
+    for (int i = 0; i < 10; i++) {
+        mblock_free(&blist, temp[i]);
+        plat_printf("free count: %d\n", mblock_free_cnt(&blist));
+    }
+}
+
 void basic_test(void) {
     nlist_test();
+    mblock_test();
 }
 
 #define DBG_TEST    DBG_LEVEL_INFO

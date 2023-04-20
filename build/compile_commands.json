@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/app/test/main.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app/test/main.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app/test/main.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/debug.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/debug.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/debug.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/exmsg.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/exmsg.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/exmsg.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/fixq.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/fixq.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/fixq.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/mblock.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/mblock.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/mblock.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/net.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/net_err.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net_err.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net_err.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/nlist.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/nlist.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/nlist.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/net/src/nlocker.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/nlocker.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/nlocker.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/plat/net_plat.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/plat/netif_pacp.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pacp.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pacp.c"
+},
+{
+  "directory": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/build",
+  "command": "/usr/bin/clang -DNET_DRIVER_PCAP -DSYS_PLAT_LINUX -D_CRT_SECURE_NO_WARNINGS -I/Users/jiangwanghan/手写TcpIp/Tinytcpip -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/npcap/Include -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat -I/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/app -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu99 -o CMakeFiles/net.dir/src/plat/sys_plat.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.c",
+  "file": "/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.c"
+}
+]

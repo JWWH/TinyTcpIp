@@ -1,0 +1,3 @@
+/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles/net.dir
+/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles/edit_cache.dir
+/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles/rebuild_cache.dir

@@ -173,4 +173,5 @@ CMakeFiles/net.dir/src/app/test/main.c.o: \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h

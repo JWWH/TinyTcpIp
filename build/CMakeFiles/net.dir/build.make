@@ -195,10 +195,24 @@ CMakeFiles/net.dir/src/net/src/nlocker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/nlocker.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/nlocker.c -o CMakeFiles/net.dir/src/net/src/nlocker.c.s
 
+CMakeFiles/net.dir/src/net/src/pktbuf.c.o: CMakeFiles/net.dir/flags.make
+CMakeFiles/net.dir/src/net/src/pktbuf.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/pktbuf.c
+CMakeFiles/net.dir/src/net/src/pktbuf.c.o: CMakeFiles/net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/net.dir/src/net/src/pktbuf.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/pktbuf.c.o -MF CMakeFiles/net.dir/src/net/src/pktbuf.c.o.d -o CMakeFiles/net.dir/src/net/src/pktbuf.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/pktbuf.c
+
+CMakeFiles/net.dir/src/net/src/pktbuf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/net.dir/src/net/src/pktbuf.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/pktbuf.c > CMakeFiles/net.dir/src/net/src/pktbuf.c.i
+
+CMakeFiles/net.dir/src/net/src/pktbuf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/pktbuf.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/pktbuf.c -o CMakeFiles/net.dir/src/net/src/pktbuf.c.s
+
 CMakeFiles/net.dir/src/plat/net_plat.c.o: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/plat/net_plat.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.c
 CMakeFiles/net.dir/src/plat/net_plat.c.o: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/net.dir/src/plat/net_plat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/net.dir/src/plat/net_plat.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/plat/net_plat.c.o -MF CMakeFiles/net.dir/src/plat/net_plat.c.o.d -o CMakeFiles/net.dir/src/plat/net_plat.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.c
 
 CMakeFiles/net.dir/src/plat/net_plat.c.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/net.dir/src/plat/net_plat.c.s: cmake_force
 CMakeFiles/net.dir/src/plat/netif_pacp.c.o: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/plat/netif_pacp.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pacp.c
 CMakeFiles/net.dir/src/plat/netif_pacp.c.o: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/net.dir/src/plat/netif_pacp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/net.dir/src/plat/netif_pacp.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/plat/netif_pacp.c.o -MF CMakeFiles/net.dir/src/plat/netif_pacp.c.o.d -o CMakeFiles/net.dir/src/plat/netif_pacp.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pacp.c
 
 CMakeFiles/net.dir/src/plat/netif_pacp.c.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/net.dir/src/plat/netif_pacp.c.s: cmake_force
 CMakeFiles/net.dir/src/plat/sys_plat.c.o: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/plat/sys_plat.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.c
 CMakeFiles/net.dir/src/plat/sys_plat.c.o: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/net.dir/src/plat/sys_plat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/net.dir/src/plat/sys_plat.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/plat/sys_plat.c.o -MF CMakeFiles/net.dir/src/plat/sys_plat.c.o.d -o CMakeFiles/net.dir/src/plat/sys_plat.c.o -c /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.c
 
 CMakeFiles/net.dir/src/plat/sys_plat.c.i: cmake_force
@@ -248,6 +262,7 @@ net_OBJECTS = \
 "CMakeFiles/net.dir/src/net/src/net_err.c.o" \
 "CMakeFiles/net.dir/src/net/src/nlist.c.o" \
 "CMakeFiles/net.dir/src/net/src/nlocker.c.o" \
+"CMakeFiles/net.dir/src/net/src/pktbuf.c.o" \
 "CMakeFiles/net.dir/src/plat/net_plat.c.o" \
 "CMakeFiles/net.dir/src/plat/netif_pacp.c.o" \
 "CMakeFiles/net.dir/src/plat/sys_plat.c.o"
@@ -264,12 +279,13 @@ net: CMakeFiles/net.dir/src/net/src/net.c.o
 net: CMakeFiles/net.dir/src/net/src/net_err.c.o
 net: CMakeFiles/net.dir/src/net/src/nlist.c.o
 net: CMakeFiles/net.dir/src/net/src/nlocker.c.o
+net: CMakeFiles/net.dir/src/net/src/pktbuf.c.o
 net: CMakeFiles/net.dir/src/plat/net_plat.c.o
 net: CMakeFiles/net.dir/src/plat/netif_pacp.c.o
 net: CMakeFiles/net.dir/src/plat/sys_plat.c.o
 net: CMakeFiles/net.dir/build.make
 net: CMakeFiles/net.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jiangwanghan/手写TcpIp/Tinytcpip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable net"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/net.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

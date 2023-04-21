@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/net.dir/src/net/src/nlist.c.o.d"
   "CMakeFiles/net.dir/src/net/src/nlocker.c.o"
   "CMakeFiles/net.dir/src/net/src/nlocker.c.o.d"
+  "CMakeFiles/net.dir/src/net/src/pktbuf.c.o"
+  "CMakeFiles/net.dir/src/net/src/pktbuf.c.o.d"
   "CMakeFiles/net.dir/src/plat/net_plat.c.o"
   "CMakeFiles/net.dir/src/plat/net_plat.c.o.d"
   "CMakeFiles/net.dir/src/plat/netif_pacp.c.o"

@@ -345,6 +345,30 @@ src/net/src/nlocker.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlocker.c.s
 .PHONY : src/net/src/nlocker.c.s
 
+src/net/src/pktbuf.o: src/net/src/pktbuf.c.o
+.PHONY : src/net/src/pktbuf.o
+
+# target to build an object file
+src/net/src/pktbuf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.o
+.PHONY : src/net/src/pktbuf.c.o
+
+src/net/src/pktbuf.i: src/net/src/pktbuf.c.i
+.PHONY : src/net/src/pktbuf.i
+
+# target to preprocess a source file
+src/net/src/pktbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.i
+.PHONY : src/net/src/pktbuf.c.i
+
+src/net/src/pktbuf.s: src/net/src/pktbuf.c.s
+.PHONY : src/net/src/pktbuf.s
+
+# target to generate assembly for a file
+src/net/src/pktbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.s
+.PHONY : src/net/src/pktbuf.c.s
+
 src/plat/net_plat.o: src/plat/net_plat.c.o
 .PHONY : src/plat/net_plat.o
 
@@ -453,6 +477,9 @@ help:
 	@echo "... src/net/src/nlocker.o"
 	@echo "... src/net/src/nlocker.i"
 	@echo "... src/net/src/nlocker.s"
+	@echo "... src/net/src/pktbuf.o"
+	@echo "... src/net/src/pktbuf.i"
+	@echo "... src/net/src/pktbuf.s"
 	@echo "... src/plat/net_plat.o"
 	@echo "... src/plat/net_plat.i"
 	@echo "... src/plat/net_plat.s"

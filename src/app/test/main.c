@@ -157,8 +157,35 @@ void pktbuf_test(void) {
     pktbuf_set_cont(buf, 60);
     pktbuf_set_cont(buf, 44);
     pktbuf_set_cont(buf, 128);
-    pktbuf_set_cont(buf, 135);
+    pktbuf_set_cont(buf, 135);  // 会出错
     pktbuf_free(buf);
+
+    buf = pktbuf_alloc(32);
+    pktbuf_join(buf, pktbuf_alloc(4));
+    pktbuf_join(buf, pktbuf_alloc(16));
+    pktbuf_join(buf, pktbuf_alloc(54));
+    pktbuf_join(buf, pktbuf_alloc(32));
+    pktbuf_join(buf, pktbuf_alloc(38));
+    pktbuf_join(buf, pktbuf_alloc(512));
+    pktbuf_join(buf, pktbuf_alloc(1000));
+
+    pktbuf_reset_acc(buf);
+
+    static uint16_t temp[1000];
+    for (int i = 0; i < 1000; i++) {
+        temp[i] = i;
+    }
+    pktbuf_write(buf, (uint8_t *)temp, pktbuf_total(buf));
+
+    static uint16_t read_temp[1000];
+    plat_memset(read_temp, 0, sizeof(read_temp));
+
+    pktbuf_reset_acc(buf);
+    pktbuf_read(buf, (uint8_t *)read_temp, pktbuf_total(buf));
+    if (plat_memcmp(temp, read_temp, pktbuf_total(buf)) != 0) {
+        plat_printf("not equal");
+        return;
+    }
 }
 
 void basic_test(void) {

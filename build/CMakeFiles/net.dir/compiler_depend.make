@@ -1041,7 +1041,8 @@ CMakeFiles/net.dir/src/net/src/net.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpi
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h
 
 CMakeFiles/net.dir/src/net/src/net_err.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net_err.c
 
@@ -1559,7 +1560,9 @@ CMakeFiles/net.dir/src/plat/net_plat.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h
 
 CMakeFiles/net.dir/src/plat/netif_pacp.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pacp.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pcap.h \

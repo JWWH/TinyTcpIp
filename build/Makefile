@@ -249,6 +249,30 @@ src/net/src/ipaddr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ipaddr.c.s
 .PHONY : src/net/src/ipaddr.c.s
 
+src/net/src/loop.o: src/net/src/loop.c.o
+.PHONY : src/net/src/loop.o
+
+# target to build an object file
+src/net/src/loop.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/loop.c.o
+.PHONY : src/net/src/loop.c.o
+
+src/net/src/loop.i: src/net/src/loop.c.i
+.PHONY : src/net/src/loop.i
+
+# target to preprocess a source file
+src/net/src/loop.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/loop.c.i
+.PHONY : src/net/src/loop.c.i
+
+src/net/src/loop.s: src/net/src/loop.c.s
+.PHONY : src/net/src/loop.s
+
+# target to generate assembly for a file
+src/net/src/loop.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/loop.c.s
+.PHONY : src/net/src/loop.c.s
+
 src/net/src/mblock.o: src/net/src/mblock.c.o
 .PHONY : src/net/src/mblock.o
 
@@ -513,6 +537,9 @@ help:
 	@echo "... src/net/src/ipaddr.o"
 	@echo "... src/net/src/ipaddr.i"
 	@echo "... src/net/src/ipaddr.s"
+	@echo "... src/net/src/loop.o"
+	@echo "... src/net/src/loop.i"
+	@echo "... src/net/src/loop.s"
 	@echo "... src/net/src/mblock.o"
 	@echo "... src/net/src/mblock.i"
 	@echo "... src/net/src/mblock.s"

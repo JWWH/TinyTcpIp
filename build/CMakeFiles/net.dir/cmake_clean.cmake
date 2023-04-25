@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/net.dir/src/net/src/fixq.c.o.d"
   "CMakeFiles/net.dir/src/net/src/ipaddr.c.o"
   "CMakeFiles/net.dir/src/net/src/ipaddr.c.o.d"
+  "CMakeFiles/net.dir/src/net/src/loop.c.o"
+  "CMakeFiles/net.dir/src/net/src/loop.c.o.d"
   "CMakeFiles/net.dir/src/net/src/mblock.c.o"
   "CMakeFiles/net.dir/src/net/src/mblock.c.o.d"
   "CMakeFiles/net.dir/src/net/src/net.c.o"

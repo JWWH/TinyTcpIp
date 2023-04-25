@@ -18,6 +18,7 @@
 #define DBG_BUF		DBG_LEVEL_INFO
 #define DBG_INIT	DBG_LEVEL_INFO
 #define DBG_PLAT	DBG_LEVEL_INFO
+#define DBG_NETIF	DBG_LEVEL_INFO
 
 #define EXMSG_MSG_CNT		10	// 消息队列的消息数
 #define EXMSG_LOCKER		NLOCKER_THREAD	// 消息队列的锁类型
@@ -26,5 +27,12 @@
 #define PKTBUF_BLK_SIZE		128	// 数据包块大小
 #define PKTBUF_BLK_CNT		100	// 数据包块的数量
 #define PKTBUF_BUF_CNT		100	// 数据包的数量
+
+#define NETIF_HWADDR_SIZE	10	// 网络接口的硬件地址长度
+#define NETIF_NAME_SIZE		10	// 网络接口的名称长度
+#define NETIF_INQ_SIZE		50	// 网络接口的输入队列长度
+#define NETIF_OUTQ_SIZE		50	// 网络接口的输出队列长度
+
+#define NETIF_DEV_CNT		10 	// 协议栈支持的网卡的数量
 
 #endif

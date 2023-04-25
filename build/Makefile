@@ -225,6 +225,30 @@ src/net/src/fixq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/fixq.c.s
 .PHONY : src/net/src/fixq.c.s
 
+src/net/src/ipaddr.o: src/net/src/ipaddr.c.o
+.PHONY : src/net/src/ipaddr.o
+
+# target to build an object file
+src/net/src/ipaddr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ipaddr.c.o
+.PHONY : src/net/src/ipaddr.c.o
+
+src/net/src/ipaddr.i: src/net/src/ipaddr.c.i
+.PHONY : src/net/src/ipaddr.i
+
+# target to preprocess a source file
+src/net/src/ipaddr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ipaddr.c.i
+.PHONY : src/net/src/ipaddr.c.i
+
+src/net/src/ipaddr.s: src/net/src/ipaddr.c.s
+.PHONY : src/net/src/ipaddr.s
+
+# target to generate assembly for a file
+src/net/src/ipaddr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ipaddr.c.s
+.PHONY : src/net/src/ipaddr.c.s
+
 src/net/src/mblock.o: src/net/src/mblock.c.o
 .PHONY : src/net/src/mblock.o
 
@@ -296,6 +320,30 @@ src/net/src/net_err.s: src/net/src/net_err.c.s
 src/net/src/net_err.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/net_err.c.s
 .PHONY : src/net/src/net_err.c.s
+
+src/net/src/netif.o: src/net/src/netif.c.o
+.PHONY : src/net/src/netif.o
+
+# target to build an object file
+src/net/src/netif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/netif.c.o
+.PHONY : src/net/src/netif.c.o
+
+src/net/src/netif.i: src/net/src/netif.c.i
+.PHONY : src/net/src/netif.i
+
+# target to preprocess a source file
+src/net/src/netif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/netif.c.i
+.PHONY : src/net/src/netif.c.i
+
+src/net/src/netif.s: src/net/src/netif.c.s
+.PHONY : src/net/src/netif.s
+
+# target to generate assembly for a file
+src/net/src/netif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/netif.c.s
+.PHONY : src/net/src/netif.c.s
 
 src/net/src/nlist.o: src/net/src/nlist.c.o
 .PHONY : src/net/src/nlist.o
@@ -462,6 +510,9 @@ help:
 	@echo "... src/net/src/fixq.o"
 	@echo "... src/net/src/fixq.i"
 	@echo "... src/net/src/fixq.s"
+	@echo "... src/net/src/ipaddr.o"
+	@echo "... src/net/src/ipaddr.i"
+	@echo "... src/net/src/ipaddr.s"
 	@echo "... src/net/src/mblock.o"
 	@echo "... src/net/src/mblock.i"
 	@echo "... src/net/src/mblock.s"
@@ -471,6 +522,9 @@ help:
 	@echo "... src/net/src/net_err.o"
 	@echo "... src/net/src/net_err.i"
 	@echo "... src/net/src/net_err.s"
+	@echo "... src/net/src/netif.o"
+	@echo "... src/net/src/netif.i"
+	@echo "... src/net/src/netif.s"
 	@echo "... src/net/src/nlist.o"
 	@echo "... src/net/src/nlist.i"
 	@echo "... src/net/src/nlist.s"

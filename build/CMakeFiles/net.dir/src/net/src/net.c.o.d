@@ -171,4 +171,9 @@ CMakeFiles/net.dir/src/net/src/net.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h

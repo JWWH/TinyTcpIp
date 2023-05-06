@@ -167,4 +167,5 @@ CMakeFiles/net.dir/src/plat/net_plat.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h

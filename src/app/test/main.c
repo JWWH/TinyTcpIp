@@ -19,8 +19,24 @@
 #include "pktbuf.h"
 #include "netif.h"
 
+pcap_data_t netdev0_data = {.ip = netdev0_phy_ip, .hwaddr = netdev0_hwaddr};
+// pcap_data_t netdev0_data = {.ip = netdev0_ip, .hwaddr = netdev0_hwaddr}; // 这是错误的，ip必须指定为真实的物理ip地址，否则pcap库无法打开该网卡
+
 net_err_t netdev_init(void){
-    netif_pcap_open();
+	netif_t * netif = netif_open("netif 0", &netdev_ops, &netdev0_data);
+	if (!netif) {
+		dbg_error(DBG_NETIF, "open netif error");
+		return NET_ERR_NONE;
+	}
+
+	ipaddr_t ip, mask, gw;
+	ipaddr_from_str(&ip, netdev0_ip);
+	ipaddr_from_str(&mask, netdev0_mask);
+    ipaddr_from_str(&gw, netdev0_gw);
+
+	netif_set_addr(netif, &ip, &mask, &gw);
+
+	netif_set_active(netif);
 
     return NET_ERR_OK;
 }
@@ -254,11 +270,11 @@ int main(int argc, char const *argv[]){
 
     net_init();
 
-    basic_test();
+    // basic_test();
+    netdev_init();
 
     net_start();
 
-    netdev_init();
 
     while(1){
         sys_sleep(100);

@@ -41,7 +41,7 @@ net_err_t exmsg_init(void){
 	return NET_ERR_OK;
 }
 
-net_err_t exmsg_netif_in(void) {
+net_err_t exmsg_netif_in(netif_t * netif) {
 	// 从mblock中分配一个消息结构
 	// 超时时间设置为-1，表示不等待，原因是将协议栈移植到arm或者其他嵌入式平台时，中断在请求时不可能一直等待
 	exmsg_t* msg = mblock_alloc(&msg_block, -1);

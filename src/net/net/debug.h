@@ -12,6 +12,7 @@
 #define DEBUG_H
 
 #include "net_cfg.h"
+#include "ipaddr.h"
 
 // 调试信息的显示样式设计
 #define DBG_STYLE_RESET 	"\033[0m"   	// 复位显示
@@ -26,6 +27,9 @@
 
 
 void dbg_printf(int m_level, int s_level, const char* file, const char* func, const int line, const char* fmt, ...);
+void dbg_dump_hwaddr(const char* msg, const uint8_t* hwaddr, int len);
+void dbg_dump_ip(const char* msg, const ipaddr_t * ipaddr);
+
 #define dbg_info(module, fmt, ...) dbg_printf(module, DBG_LEVEL_INFO, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)
 #define dbg_error(module, fmt, ...) dbg_printf(module, DBG_LEVEL_ERROR, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)
 #define dbg_waring(module, fmt, ...) dbg_printf(module, DBG_LEVEL_WARNING, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)

@@ -11,6 +11,7 @@
 #include "netif_pcap.h"
 #include "sys_plat.h"
 #include "exmsg.h"
+#include "debug.h"
 
 // 网卡的接收线程
 void recv_thread(void* arg){
@@ -21,7 +22,7 @@ void recv_thread(void* arg){
 		sys_sleep(1);
 		// 假设每隔一秒从网络上接受一个数据包
 		// 然后调用exmsg_netif_in函数将接收到的数据包传递给工作线程
-		exmsg_netif_in();
+		exmsg_netif_in((netif_t *)0);
 	}
 	
 }
@@ -37,8 +38,51 @@ void xmit_thread(void* arg){
 	
 }
 
-net_err_t netif_pcap_open(void){
-	sys_thread_create(recv_thread, (void *)0);
-	sys_thread_create(xmit_thread, (void *)0);
+/**
+ * @brief pcap设备打开
+ * 
+ * @param netif 打开的接口
+ * @param data 传入的驱动数据
+ * @return net_err_t 
+ */
+static net_err_t netif_pcap_open(struct _netif_t* netif, void * data) {
+	// 借助pcap库打开底层网卡设备
+	pcap_data_t * dev_data = (pcap_data_t *)data;
+	pcap_t * pcap = pcap_device_open(dev_data->ip, dev_data->hwaddr);
+	if (pcap == (pcap_t *)0) {
+		dbg_error(DBG_NETIF, "pcap open failed! name: %s\n", netif->name);
+		return NET_ERR_IO;
+	}
+
+	// 打开网卡之后对网络接口结构进行设置
+	netif->type = NETIF_TYPE_ETHER;
+	netif->mtu = 1500;
+	// netif的ops_data字段保存与网络接口操作相关的数据
+	// 在之后进行网络接口的关闭和数据收发时都需要借助pcap这个指针
+	netif->ops_data = pcap;
+	netif_set_hwaddr(netif, dev_data->hwaddr, 6); // 以太网硬件地址的长度为6个字节
+
+	sys_thread_create(recv_thread, netif);
+	sys_thread_create(xmit_thread, netif);
+
+
 	return NET_ERR_OK;
 }
+void netif_pcap_close (struct _netif_t* netif) {
+	pcap_t * pcap = (pcap_t *)netif->ops_data;
+	pcap_close(pcap);
+}
+
+static net_err_t netif_pcap_xmit (struct _netif_t* netif) {
+	return NET_ERR_OK;
+}
+
+/**
+ * @brief pcap驱动结构
+ * 
+ */
+const netif_ops_t netdev_ops = {
+	.open = netif_pcap_open,
+	.close = netif_pcap_close,
+	.xmit = netif_pcap_xmit,
+};

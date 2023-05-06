@@ -169,49 +169,59 @@ CMakeFiles/net.dir/src/app/test/main.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pcap.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlist.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h
 
 CMakeFiles/net.dir/src/net/src/debug.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/debug.c \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdarg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_err.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/stdio.h \
@@ -238,14 +248,6 @@ CMakeFiles/net.dir/src/net/src/debug.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
@@ -354,7 +356,35 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/exmsg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_err.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlist.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
@@ -362,30 +392,11 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/stdio.h \
@@ -412,14 +423,6 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
@@ -523,6 +526,8 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h
 
@@ -697,7 +702,8 @@ CMakeFiles/net.dir/src/net/src/fixq.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcp
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h
 
 CMakeFiles/net.dir/src/net/src/ipaddr.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/ipaddr.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
@@ -905,7 +911,9 @@ CMakeFiles/net.dir/src/net/src/loop.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcp
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/exmsg.h
 
 CMakeFiles/net.dir/src/net/src/mblock.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/mblock.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h \
@@ -1079,41 +1087,55 @@ CMakeFiles/net.dir/src/net/src/mblock.c.o: /Users/jiangwanghan/手写TcpIp/Tinyt
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h
 
 CMakeFiles/net.dir/src/net/src/net.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_err.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/exmsg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlist.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/stdio.h \
@@ -1140,14 +1162,6 @@ CMakeFiles/net.dir/src/net/src/net.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpi
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
@@ -1251,14 +1265,9 @@ CMakeFiles/net.dir/src/net/src/net.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpi
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/loop.h
 
 CMakeFiles/net.dir/src/net/src/net_err.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/net_err.c
@@ -1437,8 +1446,10 @@ CMakeFiles/net.dir/src/net/src/netif.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/exmsg.h
 
 CMakeFiles/net.dir/src/net/src/nlist.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/nlist.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlist.h
@@ -1646,6 +1657,7 @@ CMakeFiles/net.dir/src/net/src/pktbuf.c.o: /Users/jiangwanghan/手写TcpIp/Tinyt
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_err.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
@@ -1956,38 +1968,54 @@ CMakeFiles/net.dir/src/plat/net_plat.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h
 
 CMakeFiles/net.dir/src/plat/netif_pacp.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pacp.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/netif_pcap.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_err.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ipaddr.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_u_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_intptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlist.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlocker.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/sys.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/net_plat.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_size_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/stdio.h \
@@ -2014,14 +2042,6 @@ CMakeFiles/net.dir/src/plat/netif_pacp.c.o: /Users/jiangwanghan/手写TcpIp/Tiny
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_sigset_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uint64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_timeval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/machine/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/i386/endian.h \
@@ -2125,8 +2145,10 @@ CMakeFiles/net.dir/src/plat/netif_pacp.c.o: /Users/jiangwanghan/手写TcpIp/Tiny
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/secure/_string.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/exmsg.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/nlist.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h
 
 CMakeFiles/net.dir/src/plat/sys_plat.c.o: /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.c \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/plat/sys_plat.h \
@@ -2303,13 +2325,13 @@ CMakeFiles/net.dir/src/plat/sys_plat.c.o: /Users/jiangwanghan/手写TcpIp/Tinytc
 
 /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/src/exmsg.c:
 
-/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h:
-
-/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h:
-
 /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/mblock.h:
 
 /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h:
+
+/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/fixq.h:
+
+/Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/netif.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/string.h:
 

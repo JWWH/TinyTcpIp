@@ -51,9 +51,8 @@ net_err_t exmsg_netif_in(netif_t * netif) {
 		return NET_ERR_MEM;
 	}
 
-	static int id = 0;
 	msg->type = NET_EXMSG_NETIF_IN;
-	msg->id = id++;
+	msg->netif.netif = netif;
 
 	// 将构造完的消息发送给消息队列
 	net_err_t err = fixq_send(&msg_queue, msg, -1);
@@ -66,6 +65,23 @@ net_err_t exmsg_netif_in(netif_t * netif) {
 	return err;
 }
 
+static net_err_t do_netif_in(exmsg_t * msg) {
+	netif_t * netif = msg->netif.netif;
+
+	pktbuf_t * buf;
+	while ((buf = netif_get_in(netif, -1)))
+	{
+		dbg_info(DBG_MSG, "recv a packet");
+
+		//TODO: 处理接收到的数据包
+
+
+		pktbuf_free(buf);
+	}
+
+	return NET_ERR_OK;
+}
+
 static void work_thread(void *arg){
 	dbg_info(DBG_MSG, "exmsg is running...\n");
 
@@ -75,7 +91,17 @@ static void work_thread(void *arg){
 		// 超时时间设置为0，表明消息队列中没有消息时，工作线程会一直等待
 		exmsg_t * msg = (exmsg_t *)fixq_recv(&msg_queue, 0);
 
-		plat_printf("recv a msg type: %d, id: %d\n", msg->type, msg->id);
+		dbg_info(DBG_MSG, "recv a msg %p: %d\n", msg, msg->type);
+
+		switch (msg->type)
+		{
+		case NET_EXMSG_NETIF_IN:
+			do_netif_in(msg);
+			break;
+		
+		default:
+			break;
+		}
 		
 		// 释放消息
 		mblock_free(&msg_block, msg);

@@ -13,16 +13,48 @@
 #include "exmsg.h"
 #include "debug.h"
 
-// 网卡的接收线程
+/**
+ * @brief 数据包接收线程，不断的使用pcap库从网卡接收数据包
+ * 
+ * @param arg 
+ */
 void recv_thread(void* arg){
 	plat_printf("recv thread is running...\n");
 
+	netif_t* netif = (netif_t *)arg;
+	pcap_t* pcap = (pcap_t *)netif->ops_data;
+
 	while (1)
 	{
-		sys_sleep(1);
-		// 假设每隔一秒从网络上接受一个数据包
-		// 然后调用exmsg_netif_in函数将接收到的数据包传递给工作线程
-		exmsg_netif_in((netif_t *)0);
+		// 从网卡中获取一个数据包
+
+		/*
+		这里必须加上struct，否则会报错 error: must use 'struct' tag to refer to type 'pcap_pkthdr'
+		原因详见https://www.cnblogs.com/vincentqliu/p/typedef_struct.html
+		
+		*/
+		struct pcap_pkthdr* pkthdr;
+		const uint8_t* pkt_data;
+		// 返回值： 1 - 成功读取数据包， 0 - 没有数据包， 其他值 - 出错
+		if (pcap_next_ex(pcap, &pkthdr, &pkt_data) != 1) {
+			continue;
+		}
+
+		// 将data转变为缓存结构
+		pktbuf_t* buf = pktbuf_alloc(pkthdr->len);
+		if (buf == (pktbuf_t *)0) {
+			dbg_error(DBG_NETIF, "buf == NULL");
+			continue;
+		}
+
+		// 将数据包的内容写入到数据链表中
+		pktbuf_write(buf, (uint8_t*)pkt_data, pkthdr->len);
+
+		if (netif_put_in(netif, buf, 0) < 0) {
+			dbg_error(DBG_NETIF, "netif %s in_q full", netif->name);
+			pktbuf_free(buf); // 将刚才分配的数据包缓存释放掉
+			continue;
+		}
 	}
 	
 }

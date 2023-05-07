@@ -15,6 +15,14 @@
 #include "nlist.h"
 #include "netif.h"
 
+/**
+ * @brief 消息来自于哪个网络接口(即网卡)
+ * 
+ */
+typedef struct _msg_netif_t {
+	netif_t * netif;
+}msg_netif_t;
+
 // 通用消息结构
 typedef struct _exmsg_t {
 	// 临时调试用
@@ -25,7 +33,9 @@ typedef struct _exmsg_t {
 		NET_EXMSG_NETIF_IN,  	// 网络接口消息数据
 	} type;
 
-	int id;
+	union {
+		msg_netif_t netif;
+	};
 
 }exmsg_t;
 

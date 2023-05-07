@@ -40,7 +40,12 @@ net_err_t exmsg_init(void){
 	dbg_info(DBG_MSG, "init done");
 	return NET_ERR_OK;
 }
-
+/**
+ * @brief 收到来自网卡的消息
+ * 
+ * @param netif 
+ * @return net_err_t 
+ */
 net_err_t exmsg_netif_in(netif_t * netif) {
 	// 从mblock中分配一个消息结构
 	// 超时时间设置为-1，表示不等待，原因是将协议栈移植到arm或者其他嵌入式平台时，中断在请求时不可能一直等待
@@ -73,10 +78,12 @@ static net_err_t do_netif_in(exmsg_t * msg) {
 	{
 		dbg_info(DBG_MSG, "recv a packet");
 
-		//TODO: 处理接收到的数据包
-
-
-		pktbuf_free(buf);
+		// 这里进行简单测试，把收到的数据包的前六个字节改写为0x11，然后再发送出去
+		pktbuf_fill(buf, 0x11, 6);
+		net_err_t err = netif_out(netif, (ipaddr_t *)0, buf);
+		if (err < 0) {
+			pktbuf_free(buf);
+		}
 	}
 
 	return NET_ERR_OK;

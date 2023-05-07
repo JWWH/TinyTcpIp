@@ -63,9 +63,30 @@ void recv_thread(void* arg){
 void xmit_thread(void* arg){
 	plat_printf("xmit thread is running...\n");
 
+	netif_t* netif = (netif_t *)arg;
+	pcap_t* pcap = (pcap_t *)netif->ops_data;
+	// 用于保存从发送队列中取出的数据包的临时缓存
+	// 最大为1514字节， 此为以太网MTU（1500）+包头（6字节源地址，6字节目的地址，2字节的类型）字节
+	static uint8_t rw_buffer[1500 + 6 + 6 + 2];	// 4字节的校验不需要我们填充，网卡会自动填充
 	while (1)
 	{
-		sys_sleep(1);
+		// 从发送队列中取数据包
+		pktbuf_t * buf = netif_get_out(netif, 0);
+		if (buf == (pktbuf_t *)0) {
+			continue;
+		}
+
+		// 将buf中的数据拷贝到rw_buffer中，原因是buf不是一块连续的内存空间
+		// 而pcap_inject函数需要一块连续的内存空间
+		int total_size = buf->total_size;
+		plat_memset(rw_buffer, 0, sizeof(rw_buffer));
+		pktbuf_read(buf, rw_buffer, total_size);
+		pktbuf_free(buf);  // 拷贝完之后释放buf数据包
+
+		if (pcap_inject(pcap, rw_buffer, total_size) == -1) {
+			printf("pcap send failed: %s\n", pcap_geterr(pcap));
+			printf("pcap send failed: %d\n", total_size);
+		}
 	}
 	
 }

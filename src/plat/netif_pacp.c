@@ -12,6 +12,7 @@
 #include "sys_plat.h"
 #include "exmsg.h"
 #include "debug.h"
+#include "ether.h"
 
 /**
  * @brief 数据包接收线程，不断的使用pcap库从网卡接收数据包
@@ -109,7 +110,7 @@ static net_err_t netif_pcap_open(struct _netif_t* netif, void * data) {
 
 	// 打开网卡之后对网络接口结构进行设置
 	netif->type = NETIF_TYPE_ETHER;
-	netif->mtu = 1500;
+	netif->mtu = ETHER_MTU;
 	// netif的ops_data字段保存与网络接口操作相关的数据
 	// 在之后进行网络接口的关闭和数据收发时都需要借助pcap这个指针
 	netif->ops_data = pcap;

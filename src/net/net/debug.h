@@ -32,7 +32,7 @@ void dbg_dump_ip(const char* msg, const ipaddr_t * ipaddr);
 
 #define dbg_info(module, fmt, ...) dbg_printf(module, DBG_LEVEL_INFO, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)
 #define dbg_error(module, fmt, ...) dbg_printf(module, DBG_LEVEL_ERROR, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)
-#define dbg_waring(module, fmt, ...) dbg_printf(module, DBG_LEVEL_WARNING, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)
+#define dbg_warning(module, fmt, ...) dbg_printf(module, DBG_LEVEL_WARNING, __FILE__, __FUNCTION__, __LINE__, fmt, ##__VA_ARGS__)
 
 // 断言
 #define dbg_assert(expr, msg) {\

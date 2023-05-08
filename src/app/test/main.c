@@ -18,6 +18,7 @@
 #include "mblock.h"
 #include "pktbuf.h"
 #include "netif.h"
+#include "tools.h"
 
 pcap_data_t netdev0_data = {.ip = netdev0_phy_ip, .hwaddr = netdev0_hwaddr};
 // pcap_data_t netdev0_data = {.ip = netdev0_ip, .hwaddr = netdev0_hwaddr}; // 这是错误的，ip必须指定为真实的物理ip地址，否则pcap库无法打开该网卡
@@ -37,6 +38,11 @@ net_err_t netdev_init(void){
 	netif_set_addr(netif, &ip, &mask, &gw);
 
 	netif_set_active(netif);
+
+	pktbuf_t * buf = pktbuf_alloc(32);
+	pktbuf_fill(buf, 0x53, 32);
+
+	netif_out(netif, (ipaddr_t *)0, buf);
 
     return NET_ERR_OK;
 }
@@ -258,19 +264,22 @@ void basic_test(void) {
     mblock_test();
     pktbuf_test();
 
+    uint32_t v1 = x_ntohl(0x12345678);
+	uint16_t v2 = x_ntohs(0x1234);
+
 }
 
 #define DBG_TEST    DBG_LEVEL_INFO
 int main(int argc, char const *argv[]){
     dbg_info(DBG_TEST, "info");
     dbg_error(DBG_TEST, "error");
-    dbg_waring(DBG_TEST, "warning");
+    dbg_warning(DBG_TEST, "warning");
     dbg_assert(1==1, "failed");
     // dbg_assert(1==0, "failed");
 
     net_init();
 
-    // basic_test();
+    basic_test();
     netdev_init();
 
     net_start();

@@ -177,4 +177,7 @@ CMakeFiles/net.dir/src/net/src/net.c.o: \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/loop.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/loop.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ether.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/tools.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/timer.h

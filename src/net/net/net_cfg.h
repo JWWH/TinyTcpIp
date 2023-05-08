@@ -19,6 +19,11 @@
 #define DBG_INIT	DBG_LEVEL_INFO
 #define DBG_PLAT	DBG_LEVEL_INFO
 #define DBG_NETIF	DBG_LEVEL_INFO
+#define DBG_ETHER	DBG_LEVEL_INFO
+#define DBG_TOOLS	DBG_LEVEL_INFO
+#define DBG_TIMER	DBG_LEVEL_INFO
+
+#define NET_ENDIAN_LITTLE	1	// 系统是否为小端模式
 
 #define EXMSG_MSG_CNT		10	// 消息队列的消息数
 #define EXMSG_LOCKER		NLOCKER_THREAD	// 消息队列的锁类型
@@ -34,5 +39,7 @@
 #define NETIF_OUTQ_SIZE		50	// 网络接口的输出队列长度
 
 #define NETIF_DEV_CNT		10 	// 协议栈支持的网卡的数量
+
+#define TIMER_NAME_SIZE		32	// 定时器的名称长度
 
 #endif

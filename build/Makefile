@@ -177,6 +177,30 @@ src/net/src/debug.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/debug.c.s
 .PHONY : src/net/src/debug.c.s
 
+src/net/src/ether.o: src/net/src/ether.c.o
+.PHONY : src/net/src/ether.o
+
+# target to build an object file
+src/net/src/ether.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ether.c.o
+.PHONY : src/net/src/ether.c.o
+
+src/net/src/ether.i: src/net/src/ether.c.i
+.PHONY : src/net/src/ether.i
+
+# target to preprocess a source file
+src/net/src/ether.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ether.c.i
+.PHONY : src/net/src/ether.c.i
+
+src/net/src/ether.s: src/net/src/ether.c.s
+.PHONY : src/net/src/ether.s
+
+# target to generate assembly for a file
+src/net/src/ether.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/ether.c.s
+.PHONY : src/net/src/ether.c.s
+
 src/net/src/exmsg.o: src/net/src/exmsg.c.o
 .PHONY : src/net/src/exmsg.o
 
@@ -441,6 +465,54 @@ src/net/src/pktbuf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.s
 .PHONY : src/net/src/pktbuf.c.s
 
+src/net/src/timer.o: src/net/src/timer.c.o
+.PHONY : src/net/src/timer.o
+
+# target to build an object file
+src/net/src/timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/timer.c.o
+.PHONY : src/net/src/timer.c.o
+
+src/net/src/timer.i: src/net/src/timer.c.i
+.PHONY : src/net/src/timer.i
+
+# target to preprocess a source file
+src/net/src/timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/timer.c.i
+.PHONY : src/net/src/timer.c.i
+
+src/net/src/timer.s: src/net/src/timer.c.s
+.PHONY : src/net/src/timer.s
+
+# target to generate assembly for a file
+src/net/src/timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/timer.c.s
+.PHONY : src/net/src/timer.c.s
+
+src/net/src/tools.o: src/net/src/tools.c.o
+.PHONY : src/net/src/tools.o
+
+# target to build an object file
+src/net/src/tools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/tools.c.o
+.PHONY : src/net/src/tools.c.o
+
+src/net/src/tools.i: src/net/src/tools.c.i
+.PHONY : src/net/src/tools.i
+
+# target to preprocess a source file
+src/net/src/tools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/tools.c.i
+.PHONY : src/net/src/tools.c.i
+
+src/net/src/tools.s: src/net/src/tools.c.s
+.PHONY : src/net/src/tools.s
+
+# target to generate assembly for a file
+src/net/src/tools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/tools.c.s
+.PHONY : src/net/src/tools.c.s
+
 src/plat/net_plat.o: src/plat/net_plat.c.o
 .PHONY : src/plat/net_plat.o
 
@@ -528,6 +600,9 @@ help:
 	@echo "... src/net/src/debug.o"
 	@echo "... src/net/src/debug.i"
 	@echo "... src/net/src/debug.s"
+	@echo "... src/net/src/ether.o"
+	@echo "... src/net/src/ether.i"
+	@echo "... src/net/src/ether.s"
 	@echo "... src/net/src/exmsg.o"
 	@echo "... src/net/src/exmsg.i"
 	@echo "... src/net/src/exmsg.s"
@@ -561,6 +636,12 @@ help:
 	@echo "... src/net/src/pktbuf.o"
 	@echo "... src/net/src/pktbuf.i"
 	@echo "... src/net/src/pktbuf.s"
+	@echo "... src/net/src/timer.o"
+	@echo "... src/net/src/timer.i"
+	@echo "... src/net/src/timer.s"
+	@echo "... src/net/src/tools.o"
+	@echo "... src/net/src/tools.i"
+	@echo "... src/net/src/tools.s"
 	@echo "... src/plat/net_plat.o"
 	@echo "... src/plat/net_plat.i"
 	@echo "... src/plat/net_plat.s"

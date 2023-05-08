@@ -52,7 +52,7 @@ net_err_t exmsg_netif_in(netif_t * netif) {
 	exmsg_t* msg = mblock_alloc(&msg_block, -1);
 	// 如果分配失败了，网卡上接收的网络数据包会被丢弃，但是网络中丢失数据包是正常的，不会影响网络的正常运行
 	if (!msg) {
-		dbg_waring(DBG_MSG, "no free exmsg");
+		dbg_warning(DBG_MSG, "no free exmsg");
 		return NET_ERR_MEM;
 	}
 
@@ -62,7 +62,7 @@ net_err_t exmsg_netif_in(netif_t * netif) {
 	// 将构造完的消息发送给消息队列
 	net_err_t err = fixq_send(&msg_queue, msg, -1);
 	if (err < 0) {
-		dbg_waring(DBG_MSG, "fixq full");
+		dbg_warning(DBG_MSG, "fixq full");
 		mblock_free(&msg_block, msg);
 		return err;
 	}
@@ -77,11 +77,24 @@ static net_err_t do_netif_in(exmsg_t * msg) {
 	while ((buf = netif_get_in(netif, -1)))
 	{
 		dbg_info(DBG_MSG, "recv a packet");
-
+		/*
 		// 这里进行简单测试，把收到的数据包的前六个字节改写为0x11，然后再发送出去
 		pktbuf_fill(buf, 0x11, 6);
 		net_err_t err = netif_out(netif, (ipaddr_t *)0, buf);
 		if (err < 0) {
+			pktbuf_free(buf);
+		}		
+		*/
+		// 如果有链路层驱动，先将链路层进行处理
+		if (netif->link_layer) {
+			net_err_t err = netif->link_layer->in(netif, buf);
+			// 发生错误，需要自己释放包。因为这个包是已经在队列中，由自己取出的
+            		// 因此，如果上层处理不了，需要自己进行释放
+			if (err < 0) {
+				pktbuf_free(buf);
+				dbg_warning(DBG_MSG, "netif in failed, error=%d", err);
+			}
+		} else {
 			pktbuf_free(buf);
 		}
 	}

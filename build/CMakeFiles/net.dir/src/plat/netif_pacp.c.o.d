@@ -176,4 +176,5 @@ CMakeFiles/net.dir/src/plat/netif_pacp.c.o: \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/net_cfg.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/pktbuf.h \
   /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/exmsg.h \
-  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/debug.h \
+  /Users/jiangwanghan/手写TcpIp/Tinytcpip/src/net/net/ether.h

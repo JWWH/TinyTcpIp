@@ -19,6 +19,7 @@
 #include "pktbuf.h"
 #include "netif.h"
 #include "tools.h"
+#include "timer.h"
 
 pcap_data_t netdev0_data = {.ip = netdev0_phy_ip, .hwaddr = netdev0_hwaddr};
 // pcap_data_t netdev0_data = {.ip = netdev0_ip, .hwaddr = netdev0_hwaddr}; // 这是错误的，ip必须指定为真实的物理ip地址，否则pcap库无法打开该网卡
@@ -259,6 +260,44 @@ void pktbuf_test(void) {
     pktbuf_free(buf);
 }
 
+void timer0_proc(net_timer_t* timer, void * arg) {
+	static int count = 1;
+	printf("this is %s: %d\n", timer->name, count++);
+}
+
+void timer1_proc(net_timer_t* timer, void * arg) {
+	static int count = 1;
+	printf("this is %s: %d\n", timer->name, count++);
+}
+
+void timer2_proc(net_timer_t* timer, void * arg) {
+	static int count = 1;
+	printf("this is %s: %d\n", timer->name, count++);
+}
+
+void timer3_proc(net_timer_t* timer, void * arg) {
+	static int count = 1;
+	printf("this is %s: %d\n", timer->name, count++);
+}
+
+void timer_test (void) {
+    static net_timer_t t0, t1, t2, t3;
+
+    // 一次性定时器
+	net_timer_add(&t0, "t0", timer0_proc, (void *)0, 200, 0);
+
+	// 自动重载定时器
+	net_timer_add(&t1, "t1", timer1_proc, (void *)0, 1000, NET_TIMER_RELOAD);
+	net_timer_add(&t2, "t2", timer2_proc, (void *)0, 1000, NET_TIMER_RELOAD);
+    net_timer_add(&t3, "t3", timer3_proc, (void *)0, 4000, NET_TIMER_RELOAD);
+
+    net_timer_remove(&t0);
+
+    // net_timer_check_tmo(100);
+    // net_timer_check_tmo(1200);
+    // net_timer_check_tmo(2000);
+}
+
 void basic_test(void) {
     nlist_test();
     mblock_test();
@@ -280,6 +319,7 @@ int main(int argc, char const *argv[]){
     net_init();
 
     basic_test();
+    timer_test();
     netdev_init();
 
     net_start();
